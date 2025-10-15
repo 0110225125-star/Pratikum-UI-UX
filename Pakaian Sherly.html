@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Barang</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            background: #fff;
+            margin: 40px auto;
+            padding: 25px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 12px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        input[type="file"] {
+            margin-top: 10px;
+        }
+
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            background-color: #007bff;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Generate Link</a>
+        <a href="#">Transaction History</a>
+        <a href="#">Policy</a>
+        <a href="#">Logout</a>
+    </nav>
+
+    <div class="container">
+        <h2>Form Pemesanan Barang</h2>
+
+        <form>
+            <label for="gambar">Upload Gambar Barang:</label>
+            <input type="file" id="gambar" name="gambar" accept="image/*">
+
+            <label for="nama">Nama Barang:</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama barang">
+
+            <label for="deskripsi">Deskripsi Barang:</label>
+            <textarea id="deskripsi" name="deskripsi" placeholder="Tuliskan deskripsi barang..."></textarea>
+
+            <label for="account">Nomor Akun:</label>
+            <input type="text" id="account" name="account" placeholder="000-000-000">
+
+            <label for="Pilih">Jenis Barang:</label>
+            <select id="kondisi" name="kondisi">
+                <option value="">Pilih Barang</option>
+                <option value="lokal">lokal</option>
+                <option value="impor">impor</option>
+            </select>
+
+            <label for="jumlah">Jumlah Transaksi:</label>
+            <select id="jumlah" name="jumlah">
+                <option>0 Item</option>
+                <option>1 Item</option>
+                <option>2 Item</option>
+                <option>3 Item</option>
+                <option>5 Item</option>
+            </select>
+
+            <label for="hp">Nomor HP:</label>
+            <input type="text" id="hp" name="hp" placeholder="Masukkan nomor HP">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan alamat email">
+
+            <button type="submit">Kirim Pesanan</button>
+        </form>
+    </div>
+
+</body>
+</html>
